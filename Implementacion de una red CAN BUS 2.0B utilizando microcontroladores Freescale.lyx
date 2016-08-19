@@ -1,0 +1,6372 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+\usepackage {url}
+\bibliographystyle{unsrtnat}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[nottoc,numbib]{tocbibind}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices true
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\paragraph_spacing other 0
+\noindent
+
+\noun on
+Universidad Autónoma de Coahuila
+\size largest
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado10.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Facultad de Sistemas
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ingeniería en Electrónica y Comunicaciones
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Implementación de una red can bus 2.0b utilizando microcontroladores
+\end_layout
+
+\begin_layout Author
+
+\noun on
+Autor: 
+\begin_inset Newline newline
+\end_inset
+
+Alfredo Valdés Cárdenas
+\begin_inset Newline newline
+\end_inset
+
+Director de tesis: 
+\begin_inset Newline newline
+\end_inset
+
+M.I.
+ Francisco Gerardo Hernández Rivera
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Nombre del proyecto
+\end_layout
+
+\begin_layout Standard
+\noindent
+Implementación de una red CAN bus 2.0B utilizando microcontroladores.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Introducción
+\end_layout
+
+\begin_layout Standard
+\noindent
+En la región de Saltillo existe una gran cantidad de empresas dedicadas
+ a la industria automotriz, por lo que la investigación y desarrollo de
+ tecnologías aplicables a la electrónica automotriz representa una opción
+ de proyecto de tesis bastante obvia.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El protocolo de comunicación serial CAN (Controller Area Network) es utilizado
+ de manera amplia en los automóviles, para transmitir la información, por
+ ejemplo, de la velocidad de auto, las revoluciones por minuto que da el
+ motor, el control de las bolsas de aire, del aire acondicionado, de las
+ luces, de las ventanas eléctricas y los seguros, de la presión de aire
+ en las llantas, incluso proporciona información como cuantos grados se
+ ha girado el volante, la cantidad de gasolina en el tanque y fallas en
+ el motor, como las que se obtienen con un escáner OBD-II.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+En la realización de este proyecto se aplican conocimientos adquiribles
+ durante la duración de la carrera de Ingeniero en Electrónica y Comunicaciones
+ como la utilización de microcontroladores, la implementación de protocolos
+ de comunicaciones y el diseño de circuitos electrónicos, por lo cual es
+ posible asumir que un aspirante a obtener el título de Ingeniero en Electrónica
+ y Comunicaciones pueda realizar el proyecto que se detalla en este documento.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+En el ámbito personal, este proyecto representa un reto interesante que
+ se desarrolla sobre una de los ámbitos que más me interesan de la electrónica:
+ Los microcontroladores.
+ Trabajar sobre una plataforma nueva, en una arquitectura más avanzada que
+ la que se llega a ver en las clases que se cubren en la carrera me permite
+ reafirmar los conocimientos previamente adquiridos en el área, así como
+ incrementar las técnicas de desarrollo de hardware y software que poseo.
+ El proyecto también me ayuda a cimentar la orientación a las comunicaciones,
+ una de las áreas con más demanda en México en la actualidad
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Antecedentes
+\end_layout
+
+\begin_layout Standard
+\noindent
+En Febrero de 1986, Robert Bosch GmbH presento el sistema de bus serial
+ Controller Area Network (CAN) en el congreso de la Society of Automotive
+ Engineers (SAE).
+ Hoy en día, casi todos los vehículos de pasajeros que se fabrican en el
+ mundo vienen equipados con al menos una red CAN.
+ Utilizado también en otros tipos de vehículos, desde trenes a barcos, así
+ como en controles industriales, CAN es uno de los protocolos de bus dominantes
+ a nivel mundial - tal vez sea el mas usado a nivel mundial.
+ A principios de la década de 1980, los ingenieros de Bosch estaban evaluando
+ los sistemas de bus serial existentes para determinar su posible uso en
+ automóviles.
+ Dado que ninguno de los protocolos de red disponibles cumplía con los requisito
+s que buscaban los ingenieros, Uwe Kiencke comenzó a desarrollar un nuevo
+ sistema de bus serial en 1983.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El nuevo protocolo solo pretendía añadir nuevas funcionalidades - la reducción
+ de la cantidad de cableado y arneses requerida fue una consecuencia, mas
+ no la razón detrás del desarrollo de CAN.
+ Ingenieros de Mercedes-Benz se unieron al proyecto en los inicios de la
+ fase de especificación del nuevo sistema, así como Intel, que buscaba ser
+ el proveedor de semiconductores principal del proyecto.
+ El Profesor Wolfhard Lawrenz de la Universidad de 
+\noun on
+C
+\noun default
+iencia Aplicada en Braunschweig-Wolfenbüttel, Alemania, quien había sido
+ contratado como un consultor, le dio al nuevo protocolo de red el nombre
+ 'Controller Area Network'.
+ El Profesor Horst Wettstein de la Universidad de Karlsruhe aporto apoyo
+ académico a la investigación.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "historyCan"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+En la actualidad el protocolo CAN se encuentra en su tercera iteración,
+ denominada CAN FD; esta tecnología se encuentra ya implementada en los
+ automóviles mas modernos, sin embargo la adquisición de plataformas de
+ desarrollo para el consumidor en general todavía es limitada, por lo que
+ en este proyecto se utilizara la versión anterior y la que tiene mayor
+ propagación a nivel mundial, el CAN 2.0B.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Marco Teórico
+\end_layout
+
+\begin_layout Section
+Introducción al bus CAN
+\end_layout
+
+\begin_layout Standard
+\noindent
+Controller Area Network, (CAN, por sus siglas en ingles), es un protocolo
+ de comunicación serial estandarizado a nivel internacional por ISO
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Organización Internacional de estandarización, en ingles International Organizat
+ion for Standarization.
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+La industria automotriz ha podido observar en su tiempo de vida distintos
+ sistemas de control electrónicos que han sido desarrollados teniendo en
+ mente características como seguridad, confort, prevención de contaminación
+ y bajo costo.
+ Sin embargo, estos sistemas presentan una desventaja en que los tipos de
+ datos de comunicación, un nivel de confiabilidad requerida, etc…, diferían
+ entre cada sistema, y se debían configurar en múltiples líneas de bus que
+ requerían una mayor cantidad de cableado.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Existe así pues una necesidad por reducir la cantidad de cables y poder
+ transferir grandes cantidades de información atravesó de múltiples redes
+ locales.
+ Para satisfacer esta necesidad, BOSCH, una empresa alemana de equipo eléctrico,
+ desarrollo CAN en 1986 como un protocolo de comunicación para automóviles.
+ Después CAN se estandarizo en ISO 11898 e ISO 11519, estableciéndose como
+ el protocolo estándar de redes vehiculares.
+ Hoy en día, CAN es ampliamente aceptado por su gran desempeño y confiabilidad,
+ y es utilizado en una gran variedad de industrias desde lo automotriz hasta
+ la industria médica.
+\end_layout
+
+\begin_layout Section
+Características y prestaciones del bus CAN
+\end_layout
+
+\begin_layout Itemize
+Económico y sencillo de implementar: El hecho de poder ahorrar en cableado
+ y, sobre todo en el diseño de los dispositivos en el aspecto de comunicaciones,
+ reduce el costo y la complejidad del diseño del circuito.
+\end_layout
+
+\begin_layout Itemize
+Gestión de prioridades: Al momento de ocurrir una colisión de paquetes en
+ el bus, se le transmitirá el mensaje con mayor prioridad.
+\end_layout
+
+\begin_layout Itemize
+Gestión inteligente del bus: El bus CAN realiza una gestión de la transferencia
+ de mensajes de bit inteligente de manera que, si en un momento dado de
+ la transmisión, un mensaje resulta ser más prioritario que los demás, no
+ se volverá a retransmitir desde el principio y continuará su transmisión.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mensajes o CAN frames: Los mensajes que se transmiten al bus CAN, se denominan
+ “CAN frames” que contienen una serie de cabeceras, un identificador y los
+ datos del mensaje.
+ El mensaje en formato estándar puede variar de 44 a 108 bits y, en el formato
+ extendido, varía entre 64 a 128 bits.
+ 
+\end_layout
+
+\begin_layout Itemize
+Control de errores de mensajes: La especificación del protocolo CAN, define
+ una de las cabeceras del “CAN frame” para el control de errores de los
+ mensajes.
+ Dicho control es posible gracias al Checksum CRC de 15 bits establecido
+ en el CAN frame para verificar la integridad del mensaje.
+\end_layout
+
+\begin_layout Itemize
+Retransmisión de mensajes: Si un nodo no ha podido transmitir su mensaje
+ debido a que su mensaje es menos prioritario que los otros, o no ha podido
+ debido a un error de transmisión, el mensaje se retransmitirá cuantas veces
+ sea necesario.
+\end_layout
+
+\begin_layout Itemize
+Extensible: Es posible ampliar el número de bits usados en el “CAN frame”
+ de forma sencilla, para extender el uso del protocolo, configurando el
+ nodo concreto.
+\end_layout
+
+\begin_layout Itemize
+Orientado a mensajes: Debido a que la especificación del protocolo CAN no
+ contempla cabeceras específicas, para identificar en el “CAN frame” ni
+ el remitente ni el destinatario, está orientado a mensaje debido a las
+ características de sus cabeceras.
+ Así pues, estos mensajes se les atribuyen unos identificadores en particular
+ en la red y los nodos CAN, según sus necesidades, aceptarán dicho mensaje
+ o no.
+\end_layout
+
+\begin_layout Itemize
+Tolerancia a errores de nodos: Si un nodo alcanza el número máximo de errores
+ de transmisión o, por algún motivo, resulta ser defectuoso, no perjudicará
+ el resto de los componentes o nodos de la red CAN, ya que aislarán de la
+ comunicación al nodo conflictivo.
+\end_layout
+
+\begin_layout Itemize
+Ancho de banda regulable: Para cualquier nodo CAN, es posible regular la
+ velocidad a la que transmite de forma sencilla.
+ Estas velocidades de transmisión comprenden entre 125 kbps (baja velocidad
+ tolerante a fallos) y 1 Mbps.
+\end_layout
+
+\begin_layout Itemize
+Broadcasting: Los mensajes que un nodo envía a través de la red CAN, es
+ recibido por todos los nodos que estén conectados a la misma.
+\end_layout
+
+\begin_layout Itemize
+Modelo de comunicación multimaestro: Todos y cada uno de los nodos CAN,
+ disponen de la posibilidad de transmitir y recibir mensajes a cualquiera
+ de los nodos sin ninguna restricción.
+\end_layout
+
+\begin_layout Section
+Modelo de referencia OSI y el Bus CAN
+\end_layout
+
+\begin_layout Standard
+\noindent
+El protocolo CAN incluye las capas de transporte, enlace de datos y física
+ del modelo de referencia básico OSI
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Modelo de interconexión de sistemas abiertos (ISO/IEC 7498-1), más conocido
+ como “modelo OSI” (en inglés, Open System Interconnection)
+\end_layout
+
+\end_inset
+
+.
+ La capa de enlace de datos se divide en las subcapas MAC y LLC; La subcapa
+ MAC constituye el núcleo del protocolo CAN.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+La función de la capa de enlace de datos es unir las señales recibidas por
+ la capa física en un mensaje estructurado que provee un proceso para el
+ control de la transmisión de datos.
+ De manera más específica, se trata de empaquetar los mensajes en un frame,
+ Arbitrariedad de datos de colisión, un mensaje de acknowledgement (similar
+ a un handshake) y detectar o notificar errores.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Estas funciones de la capa de enlace de datos se ejecutan normalmente mediante
+ hardware en el controlador CAN.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Para la capa física, el protocolo define la manera en la cual las señales
+ son transmitidas, el tiempo entre bits, la codificación de los bits y el
+ proceso de sincronización.
+ Sin embargo, esto no significa que los niveles de las señales, la velocidad
+ de comunicación, los valores de muestreo, las características eléctricas
+ del bus y el factor de forma del conector se definan de manera específica
+ por el protocolo CAN; Todas estas deben de ser seleccionadas para cada
+ dispositivo por el usuario.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+En la especificación CAN de BOSCH, no existen definiciones con respecto
+ a las características eléctricas de transceivers y bus.
+ No obstante, en el estándar ISO para el protocolo CAN (ISO11898 e ISO 11519-2)
+ las características físicas y eléctricas de los transceivers y el bus si
+ están definidas.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado1.png
+	lyxscale 10
+	scale 60
+	rotateOrigin center
+	groupId Ilustraciones
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación entre el modelo OSI y el protocolo CAN (Traducción Propia).
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Renesas2006"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La Capa Física
+\end_layout
+
+\begin_layout Standard
+\noindent
+La especificación del protocolo CAN está basado en los dos estándares de
+ transmisión ISO 11898 (transmisión de alta velocidad) e ISO 11519 (transmisión
+ de baja velocidad tolerante a fallos).
+ 
+\end_layout
+
+\begin_layout Subsection
+\noindent
+Estándar 11519:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado2.png
+	lyxscale 10
+	scale 60
+	rotateOrigin center
+	groupId Ilustraciones
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Forma de la trama diferencial del bus CAN para la especificación ISO 11519.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Los nodos conectados a la red CAN de baja velocidad y tolerante a fallos,
+ dispondrán de los siguientes voltajes: 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Dominante: El voltaje diferencial 
+\begin_inset Formula $CAN_{H}-CAN_{L}$
+\end_inset
+
+ es de 
+\begin_inset Formula $2V$
+\end_inset
+
+ con 
+\begin_inset Formula $CAN_{H}=3.5V$
+\end_inset
+
+ y 
+\begin_inset Formula $CAN_{L}=1.5V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Recesivo: El voltaje diferencial 
+\begin_inset Formula $CAN_{H}-CAN_{L}$
+\end_inset
+
+ es de 
+\begin_inset Formula $5V$
+\end_inset
+
+ con 
+\begin_inset Formula $CAN_{H}=0V$
+\end_inset
+
+ y 
+\begin_inset Formula $CAN_{L}=5V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+A diferencia del estándar de alta velocidad, es necesario que cada uno de
+ los dispositivos de los nodos CAN esté conectados a una resistencia de
+ 120 ohm, para reducir la velocidad de transmisión y sean detectables los
+ fallos en la red.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado3.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nodo de bus CAN de baja velocidad
+\emph on
+.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estándar 11898:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado4.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Forma de la trama 
+\begin_inset Formula $CAN_{L}-CAN_{H}$
+\end_inset
+
+ para la especificación ISO 11898.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Los nodos de la red CAN de alta velocidad, podrán recibir las siguientes
+ señales lógicas: 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Dominante: El voltaje diferencial 
+\begin_inset Formula $CAN_{H}-CAN_{L}$
+\end_inset
+
+ es de 
+\begin_inset Formula $2V$
+\end_inset
+
+ con 
+\begin_inset Formula $CAN_{H}=3.5V$
+\end_inset
+
+ y 
+\begin_inset Formula $CAN_{L}=1.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Recesivo: El voltaje diferencial 
+\begin_inset Formula $CAN_{H}-CAN_{L}$
+\end_inset
+
+ es de 
+\begin_inset Formula $0V$
+\end_inset
+
+ con 
+\begin_inset Formula $CAN_{H}=CAN_{L}=2.5V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Adicionalmente, la red CAN debe estar conectada cada extremo a una resistencia
+ de 120 ohm, en vez de conectarlos a cada transmisor de cada nodo CAN ya
+ que limita la velocidad de transmisión.
+ De esta forma se alcanza a 1Mbps de velocidad de transmisión, no obstante,
+ los errores de transmisión a este nivel deberán ser controlados por otros
+ niveles o capas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado5.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Topología CAN de alta velocidad.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Otro componente crucial de la capa física es la velocidad de transmisión
+ del bus CAN.
+ Como en la mayoría de los sistemas físicos, la longitud del par por el
+ cual transmitimos influye en la velocidad de transmisión, teniendo una
+ relación proporcionalmente inversa entre distancia y velocidad; es decir,
+ un cable más corto tendrá mayor velocidad de transmisión de datos que un
+ cable largo.
+ En la siguiente tabla se muestran los valores típicos de transmisión en
+ un bus can con respecto a la longitud del cable.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Velocidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tiempo de Bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longitud Máxima
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 Mbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+800 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.25 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+250 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+250 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+125 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2500m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Kbps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 µS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000 m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación Velocidad/Longitud del cable de Bus CAN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La capa de Enlace de datos 
+\end_layout
+
+\begin_layout Standard
+\noindent
+La especificación CAN asigna a este nivel la gestión del acceso al medio
+ (MAC, Medium Access Control) y el control lógico (LLC, Logic Link Control).
+ Para ello, define unos mensajes o tramas para la gestión de las comunicaciones
+ y cuyo responsable es la subcapa MAC.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Las tramas definidas por la especificación CAN, son de cuatro tipos y se
+ describen a continuación: 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Trama de datos (Data Frame): Es la trama que generalmente transmite el Bus
+ CAN para él envió de datos.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Trama remota (Remote Frame): Esta trama es usada por el dispositivo CAN
+ que solicita él envió de datos a los destinatarios.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Trama de error (Error Frame): Al detectarse un error en el bus CAN, se transmite
+ esta trama desde el dispositivo que lo ha detectado.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Trama de sobrecarga (Overload Frame): Indica que el nodo que la transmite
+ requerirá de un tiempo antes de poder recibir otra trama de datos o remota.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Espaciado entre tramas: Entre trama y trama transmitida, se transmite una
+ secuencia predefinida para establecer el final de una trama.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Bus en reposo: Para que el bus este en escucha de nuevas tramas, se mantiene
+ el bus al nivel recesivo constantemente.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+La trama de datos y la remota están construidas por una secuencia de bits
+ de longitud mínima de 44 bits en el formato estándar.
+ En la especificación CAN, establecen grupos para la definición de la cabecera
+ de la trama transmitida, como se muestra en la siguiente tabla:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cabecera
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longitud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descripción
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start of Frame (SoF)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica el comienzo de la trama de datos estándar.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identifier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Representa el identificador del mensaje y la prioridad que tiene.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remote Transmission Request
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Esta cabecera indica si es una trama de datos (Valor a 0) o si es una trama
+ remota (valor a 1).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identifier Extensión bit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica si la trama es en formato estándar (0) o si es extendida (1).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reserved bit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Establecido a (0), no se usa.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Length Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica en número de octetos que están disponibles en el campo de datos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Field
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+footnotemark
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 - 8 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los bytes de datos que incorpora el frame.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CRC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Checksum de la trama.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CRC delimiter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Delimita el CRC con el resto de datos de la cabecera.
+ Debe tener el valor (1).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ACK slot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica que al menos un nodo ha recibido correctamente la trama.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ACK delimiter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Separa el ACK slot del resto de datos de la trama.
+ Debe tener el valor (1).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+End of Frame (EoF)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indica la finalización de la trama.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Secuencia de 44 bits de trama CAN.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotetext{En una trama remota el campo DATA FIELD no incluye datos.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gestión de acceso al bus 
+\end_layout
+
+\begin_layout Standard
+\noindent
+En el momento de la transmisión, si dos o más nodos CAN coinciden en la
+ transmisión el arbitraje del acceso al bus concederá al nodo con el mensaje
+ más prioritario la escritura sobre él.
+ A continuación se muestra el acceso simultáneo de 3 nodos al bus CAN.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Cada uno de los nodos, transmite bit a bit su mensaje y, para cada bit transmiti
+do, lo compara con el bit recibido.
+ Mientras que el bit transmitido y el bit comparado sean el mismo, el nodo
+ que transmite lo seguirá realizando.
+ No obstante, si el bit difiere, el nodo pierde el acceso al bus, y espera
+ a un espaciado entre tramas para volver a intentar escribir sobre el bus
+ de nuevo.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Se ha de considerar, para que esto suceda, la transmisión del valor “0”
+ (dominante) prevalece antes que el valor “1” (recesivo) y, por ello, si
+ un primer nodo transmite un “1” y otro un “0”, el segundo nodo gana el
+ arbitraje y seguirá transmitiendo, mientras que el primer nodo tendrá que
+ esperar a que termine esta transmisión para volver a realizarla.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+De esta forma, el mensaje con un identificador expresado en decimal más
+ bajo, es el de mayor prioridad ya que contiene un mayor número de valores
+ “0” en las posiciones de más peso del mensaje o trama CAN.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado6.png
+	lyxscale 10
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arbitraje del Bus CAN.
+
+\emph on
+ 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhenYu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Por otro lado, cabe destacar que el nodo que transmite el mensaje más prioritari
+o, no se le requiere la retransmisión de su mensaje, después de haber terminado
+ el arbitraje.
+ Así pues, continuará con su transmisión del resto de datos que le restaban
+ por transmitir consiguiendo así, un uso eficiente del ancho de banda del
+ bus CAN.
+ 
+\end_layout
+
+\begin_layout Subsection
+Detección y Gestión de Errores
+\end_layout
+
+\begin_layout Standard
+\noindent
+La capa MAC contribuye con las labores de control y detección de errores
+ sobre el bus CAN.
+ Por un lado, se gestionan los errores a nivel de mensaje gracias a los
+ mecanismos que se han establecido en la especificación y, por otro, se
+ gestionan los errores a nivel de nodo ya que, si un nodo no funciona correctame
+nte o ha provocado un número elevado consecutivo de errores durante la transmisi
+ón de un mensaje, éste se auto aísla del resto de nodos para evitar el mal
+ funcionamiento del bus.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Los errores a nivel de mensaje pueden ser los siguientes: 
+\end_layout
+
+\begin_layout Itemize
+Error de bit (Bit Error): Se produce este error cuando el nodo detecta que
+ 
+\emph on
+(Freescale, 2012, p.
+ 601)
+\emph default
+durante la transmisión de su mensaje, el bit transmitido no coincide con
+ que se ha recibido.
+\end_layout
+
+\begin_layout Itemize
+Error de relleno (Stuffing Error): Este error se produce cuando se detectan
+ 6 bits consecutivos del mismo valor en las cabeceras de la trama CAN, que
+ deban seguir el “Bit Stuffing”.
+ 
+\end_layout
+
+\begin_layout Itemize
+Error de CRC: Cuando el Checksum que calcula el receptor, no coincide con
+ el Checksum del mensaje recibido, se produce este error.
+\end_layout
+
+\begin_layout Itemize
+Error de forma: Se produce cuando se ha recibido una trama con una cabecera
+ de tamaño fijo, con otra longitud en bits diferente.
+\end_layout
+
+\begin_layout Itemize
+Error de reconocimiento (ACK Error): Se produce cuando ningún nodo receptor
+ escribe sobre campo “ACK spot”.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Un dispositivo puede tener uno de los siguientes tres estados:
+\end_layout
+
+\begin_layout Itemize
+Estado de error activo: El estado de error activo es un estado en el cual
+ la unidad puede participar en comunicaciones sobre el bus de manera normal.
+ Si el dispositivo detecta un error, transmite una bandera de error activo.
+\end_layout
+
+\begin_layout Itemize
+Estado de error pasivo: Aunque un dispositivo en estado de error pasivo
+ puede participar en comunicaciones en el bus, no puede notificar a otras
+ unidades de un error mientras está recibiendo datos de manera que no interrumpa
+ sus comunicaciones.
+ Incluso cuando la unidad en estado de error pasivo ha detectado un error,
+ si los otros dispositivos en el bus no han detectado una unidad en estado
+ de error activo se asume que no ocurrió ningún error en el bus.
+ Cuando el dispositivo en estado de error pasivo ha detectado un error,
+ transmite una bandera de error pasivo; Además un dispositivo en estado
+ de error pasivo no puede iniciar una transmisión inmediatamente después
+ de terminar de enviar un paquete.
+ Un periodo de transmisión de paquete compuesto de 8 bits recesivos es insertado
+ en un espacio entre paquetes antes de que la próxima transmisión pueda
+ iniciar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Estado de Bus en reposo: En el estado de bus en reposo el dispositivo no
+ puede comunicarse dentro del bus.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Cada uno de estos estados es administrado mediante el contador de errores
+ de transmisión y el contador de errores de recepción, obteniendo el estado
+ de error relevante mediante una combinación de ambos contadores.
+ La relación entre estados de error y valores de contador se muestra en
+ la siguiente tabla:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ESTADO DE ERROR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CONTADOR DE ERROR DE TRANSMISIÓN Y CONTADOR DE ERROR DE RECEPCIÓN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error activo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-127 Y 0-127
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error pasivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+128-255 O 128-255
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bus en reposo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mínimo 256
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estados de error del Bus CAN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La plataforma TRK-MPC5606B 
+\end_layout
+
+\begin_layout Standard
+\noindent
+La plataforma TRK-MPC5606B es una tarjeta de desarrollo orientada a la industria
+ automotriz fabricada por Freescale.
+ La tarjeta incluye: 
+\end_layout
+
+\begin_layout Itemize
+Microcontrolador MPC5606B en empaquetado 144LQFP.
+\end_layout
+
+\begin_layout Itemize
+Conexión JTAG mediante un circuito OSBDM utilizando el MCU MPC9S08JM.
+\end_layout
+
+\begin_layout Itemize
+Transceiver CAN MCZ3390S5EK.
+\end_layout
+
+\begin_layout Itemize
+Interfaz CAN y LIN.
+\end_layout
+
+\begin_layout Itemize
+Interfaz analógica con potenciómetro.
+\end_layout
+
+\begin_layout Itemize
+LEDs de alta luminosidad.
+\end_layout
+
+\begin_layout Itemize
+Interfaz de comunicación serial SCI.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado7.png
+	lyxscale 10
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tarjeta TRK-MPC5606B.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NXPSF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+El Microcontrolador MPC5606B 
+\end_layout
+
+\begin_layout Standard
+\noindent
+El MPC5606B es un microcontrolador desarrollado por Freescale Semiconductor,
+ perteneciente a la familia MPC560x, también conocida como Qorivva.
+ Es un microcontrolador de 32 bits dedicado para aplicaciones orientadas
+ a la electrónica de carrocería automotriz.
+ Su núcleo está basado en arquitectura PPC.
+ Sus principales características son: 
+\end_layout
+
+\begin_layout Itemize
+1 MB de memoria flash para código, 64 KB de flash para datos y 80 KB de
+ memoria SRAM.
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de operación del núcleo de hasta 64 MHz, basado en un lazo de
+ seguimiento de fase modulado por frecuencia (FM PLL).
+\end_layout
+
+\begin_layout Itemize
+Controlador de Interrupciones (INTC) con 148 vectores de interrupción prioritari
+os seleccionables, incluyendo 16 interrupciones externas.
+\end_layout
+
+\begin_layout Itemize
+32 canales para conversores análogo digital de 10 bits (ADC) y 16 canales
+ para para conversores análogo digital de 12 bits.
+\end_layout
+
+\begin_layout Itemize
+6 módulos de interfaz serial periférica (DSPI), 8 interfaces de comunicación
+ serial (LINFlex), 6 módulos CAN (FlexCAN).
+\end_layout
+
+\begin_layout Itemize
+123 entradas y salidas de uso general configurables (GPIO).
+\end_layout
+
+\begin_layout Itemize
+6 timers periódicos con interrupción (PIT) con una resolución de 32 bits.
+\end_layout
+
+\begin_layout Itemize
+Debugger en el sistema por medio de interfaz JTAG (IEEE 1149.1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado8.png
+	lyxscale 10
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de bloques del MPC56060B.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mpce5607brefman"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+El módulo FlexCAN 
+\end_layout
+
+\begin_layout Standard
+\noindent
+El MPC5606B contiene 6 módulos FlexCAN, llamados CAN_0, CAN_1, CAN_2, CAN_3,
+ CAN_4 y CAN_5.
+ Los módulos FlexCAN implementan el protocolo CAN de acuerdo a la especificación
+ CAN 2.0B.
+ Los paquetes pueden tener un tamaño de hasta 8 bytes y una velocidad de
+ transmisión de hasta 1 Mbit/s.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El diagrama de bloques que se muestra a continuación describe la estructura
+ de un módulo FlexCAN.
+ La memoria SRAM está dedicada al almacenamiento de los buffers de mensaje
+ (MBS, Message Buffer Storage) y a las ID de los registros de almacenamiento
+ de máscaras.
+ Hasta 64 mensajes pueden ser almacenados en cualquier momento dado.
+ Cada uno de estos 64 buffers de mensaje almacena configuración y datos
+ de control, time stamps, IDs de mensaje y los a enviar o transmitir.
+ Los 64 buffers de un módulo FlexCAN son llamados BUF[0] a BUF[63].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pegado9.png
+	lyxscale 10
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de bloques del módulo FlexCAN
+\emph on
+.
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mpce5607brefman"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El módulo FlexCAN se compone de 3 sub-módulos:
+\end_layout
+
+\begin_layout Itemize
+La interfaz de protocolo CAN maneja la comunicación serial del bus, la recepción
+ y transmisión de los mensajes, la validación de los mensajes recibidos
+ y el manejo de errores.
+ 
+\end_layout
+
+\begin_layout Itemize
+El manejador de Buffers de Mensaje se encarga de seleccionar el buffer para
+ la transmisión y recepción.
+ 
+\end_layout
+
+\begin_layout Itemize
+La unidad de interfaz de bus controla el acceso al bus interno de conexión
+ con la CPU.
+ La interfaz recibe datos y un pulso de reloj de la CPU y provee datos recibidos
+ e interrupciones.
+\end_layout
+
+\begin_layout Standard
+El módulo de FlexCAN tiene 5 modos de operación:
+\end_layout
+
+\begin_layout Itemize
+Modo normal (usuario o supervisor): El módulo está activo, envía y recibe
+ mensajes normalmente y todas las funciones del protocolo CAN están activadas.
+\end_layout
+
+\begin_layout Itemize
+Modo Freeze: En este modo, ningún proceso de transmisión o recepción está
+ permitido.
+ El módulo pierde sincronización con el bus CAN.
+ Si se activa el bit FRZ, el módulo entrara en modo Freeze si el bit HALT
+ está activado en el registro MCR o si el módulo está en modo debug.
+\end_layout
+
+\begin_layout Itemize
+Modo de solo recepción: La transmisión se desactiva, el módulo solo recibe
+ mensajes reconocidos por otra estación CAN (Por lo tanto debe de haber
+ al menos otros dos dispositivos en el bus CAN para que este modo funcione).
+\end_layout
+
+\begin_layout Itemize
+Modo de loopback: Se crea un lazo interno entre la salida del transmisor
+ y la entrada del receptor para poder realizar pruebas de funcionamiento
+ del Transceiver.
+ El módulo entra en este modo solo si el bit LPB en el registro MCR se encuentra
+ en 1.
+\end_layout
+
+\begin_layout Itemize
+Modo de bajo consumo de energía: Todos los pulsos de reloj se apagan.
+ El módulo entra en este estado si el bit MDIS en el registro MCR se activa,
+ siempre y cuando todos los procesos de transmisión y recepción en curso
+ hayan terminado.
+\end_layout
+
+\begin_layout Standard
+La tarjeta incluye un conector DB9 (JP3) que enlaza a los pines CANH y CANL
+ del Transceiver SBC MCZ3390S5EK (U2).
+ Los pines TX y RX del transceiver están conectados a los pines PC11 y PC10
+ del microcontrolador; El pin PC10 está asociado a CAN1TX (Función Alternativa
+ AF1) y PC11 puede ser asociado a CAN1RX o CAN4RX (activados mediante el
+ registro PSMI en el SIUL).
+ Para que el transceiver inicie operación se deberá forzar su entrada en
+ modo debug.
+ Para poder activar el modo debug se deberá de cumplir las siguientes condicione
+s:
+\end_layout
+
+\begin_layout Itemize
+El SBC deberá ser alimentado con un voltaje máximo de 12V.
+ En la tarjeta se deberá de conectar una fuente de poder externa, así como
+ poner en corto los pines 5 y 6 del conector J1.
+ Para verificar el funcionamiento adecuado el pin 16 del SBC (DBG) debe
+ tener un voltaje entre 8 y 10 V, el pin 22 (RST) este a 5 V y el pin 6
+ (5VCAN) este a 5V (Prueba que el regulador de voltaje CAN está funcionando
+ de manera apropiada).
+\end_layout
+
+\begin_layout Itemize
+En modo debug el transceiver CAN siempre está activo, para forzar el dispositivo
+ a entrar a este modo el microcontrolador deberá enviar los comandos SPI
+ adecuados al transceiver.
+ En la tarjeta, los pines del módulo DSPI1 del microcontrolador (Puerto
+ H) están conectados al SBC.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Boyer"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La tarjeta Arduino Mega 2560
+\end_layout
+
+\begin_layout Standard
+\noindent
+El Arduino Mega 2560 es un microcontrolador basado en el ATmega2560.
+ Cuenta con 54 GPIOs (de los cuales 15 se pueden usar como salidas PWM),
+ 16 entradas analógicas, 4 UARTs, un oscilador de cristal de 16 MHz, un
+ conector USB, una entrada de alimentación, un conector ICSP y un botón
+ de Reset.
+ Contiene todo lo necesario para simplemente conectar la tarjeta a una computado
+ra mediante USB y cargar el programa para que el microcontrolador pueda
+ funcionar.
+ El Arduino podrá ser programado en ASM compatible con AVR, C, o el lenguaje
+ propietario de Arduino, un conjunto de librerías escritas en C y ASM, el
+ cual se asemeja a C++.
+ El ATmega2560 cuenta con 256 KB de memoria flash para almacenar código
+ (de los cuales 8KB se utilizan para almacenar el bootloader de Arduino),
+ 8 KB de SRAM y 4 KB de EEPROM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado11.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arduino Mega 2560 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arduino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+El CAN-BUS Shield
+\end_layout
+
+\begin_layout Standard
+\noindent
+Los Shields son circuitos que siguen la metodología modular del Arduino.
+ Estos circuitos se conectan en una topología estilo torre, la cual permite
+ conectar múltiples shields a un solo microcontrolador.
+ La restricción de esta topología esta en los pines de chip select para
+ el bus SPI de cada shield, ya que el bus SPI exige un pin CS por cada dispositi
+vo conectado al bus.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El CAN-BUS Shield incluye un controlador para CAN Bus MCP2515 de Microchip
+ con una interfaz SPI y un transceiver CAN MCP2551 de Microchip; Este shield
+ le da a la tarjeta Arduino la capacidad de comunicarse con otros dispositivos
+ a través de una red CAN 2.0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado12.png
+	lyxscale 10
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CAN-BUS Shield de Seeed Studio
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shield"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Objetivos
+\end_layout
+
+\begin_layout Section
+Objetivo General
+\end_layout
+
+\begin_layout Standard
+\noindent
+Generar una aplicación para micro controlador Freescale, que, mediante el
+ protocolo de comunicación CAN bus 2.0B, envié información acerca de un proceso,
+ interactuando con su instrumentación y actuadores.
+ 
+\end_layout
+
+\begin_layout Section
+Objetivos Específicos
+\end_layout
+
+\begin_layout Itemize
+Generar una plataforma de instrumentación y actuadores para el proceso.
+ 
+\end_layout
+
+\begin_layout Itemize
+Generar un servidor para el monitoreo e interacción del usuario con el proceso.
+ 
+\end_layout
+
+\begin_layout Itemize
+Establecer una red CAN bus 2.0B que comunique la tarjeta de control (Freescale
+ TRK-MPC5606B) con la tarjeta de monitoreo (Arduino Mega 2560).
+ 
+\end_layout
+
+\begin_layout Itemize
+Fortalecer el desarrollo académico de materias de la carrera de Ingeniero
+ En Electrónica y Comunicaciones como Comunicaciones, Instrumentación y
+ Microcontroladores, generando metodologías y conocimientos que sienten
+ un precedente para el nivel de las practicas realizables en estas materias.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Metodología
+\end_layout
+
+\begin_layout Section
+Infraestructura
+\end_layout
+
+\begin_layout Standard
+\noindent
+Para la implementación del proyecto se utilizara la tarjeta TRK-MPC5606B
+ de Freescale, la tarjeta Arduino Mega 2560 con el CAN-BUS Shield de Seeed
+ Studio, el analizador de protocolo CAN BUS Analyzer Tool AGPDT002 de Microchip,
+ el software Freescale Codewarrior para la programación del microcontrolador
+ y el software Microchip CAN BUS Analyzer para observar los paquetes enviados
+ en el bus CAN.
+ Se desarrollara una aplicación para el control de un VFD (Variable Frequency
+ Drive) Parker AC690+, el cual controla un motor trifasico de corriente
+ alterna.
+\end_layout
+
+\begin_layout Section
+Implementación
+\end_layout
+
+\begin_layout Subsection
+Software RAppID 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Primero se procederá a la elaboración del código.
+ Un microcontrolador como lo es el MPC5606B contiene una gran cantidad de
+ registros y periféricos, por lo que Freescale ha desarrollado una herramienta
+ que nos permite generar el código driver necesario para la operación de
+ cada módulo, llamada RAppID.
+ A continuación se detalla el proceso para inicializar un programa de uso
+ de protocolo CAN para la tarjeta TRK-MPC5606B: Comenzamos por abrir el
+ programa RAppID Pin Wizard, donde seleccionamos la opción MPC5606B y damos
+ clic en “Start Wizard”.
+ Después nos pedirá seleccionar el empaquetado del circuito integrado.
+ Seleccionamos la opción “144 QFP” y damos clic en “Next”.
+ Después configuraremos los pines del microcontrolador como se muestra en
+ la tabla:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User Assigned Signal Name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ADC_0_ADC_1 ANP0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ANP0_Potentiometer_Input
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de pines ADC en el software RAppID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User Assigned Signal Name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DSPI_1 Chip Select 0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH3_DSPI1_CS0_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DSPI_1 Clock
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH2_DSPI1_CLK_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DSPI_1 Data Out 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH1_DSPI1_Data_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DSPI_1 Data In 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PH0_DSPI1_Data_Input
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de pines DSPI1 en el software RAppID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User Assigned Signal Name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CAN_1 Tx
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC10_CAN1_Tx
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CAN_1 Rx
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC11_CAN1_Rx
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de pines CAN1 en el software RAppID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User Assigned Signal Name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE4_LED1_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE5_LED2_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE6_LED3_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE7_LED4_Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración de los LEDs en el software RAppID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Hemos terminado con la ubicación de pines.
+ Ahora presionamos “Next” tres veces para llegar a la ventana de “System
+ Clock/Timers”.
+ Aquí modificaremos las siguientes opciones: 
+\end_layout
+
+\begin_layout Itemize
+En la pestaña Mode Entry
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Subpestaña General Configuration: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+En el apartado Mode Configuration buscar el modo DRUN y seleccionar en la
+ lista de la última columna la opción System PLL 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Subpestaña Peripheral Configuration 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seleccionar el botón marcado como “Normal”
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+En la pestaña SWT
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desactivar la opción “Enable Watchdog Timer”
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+A continuación damos clic en “Next” para terminar la configuración de Timers.
+ Se nos presenta ahora la ventana de configuración de Periféricos, la cual
+ se basa en la selección de pines que hicimos en el procedimiento anterior.
+ Para comenzar seleccionamos la opción DSPI.
+\end_layout
+
+\begin_layout Standard
+\noindent
+En la siguiente ventana seleccionaremos las siguientes opciones: 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Master/Slave Mode: Master
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Peripheral Chip Select Line 0 inactive state: High 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Halt Mode: Disable 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Presionar “Next”
+\end_layout
+
+\begin_layout Standard
+\noindent
+Después, configuraremos el módulo ADC, seleccionando la opción ADC.
+ En la ventana, dentro de la pestaña superior «ADC_0» seleccionaremos las
+ siguientes opciones
+\end_layout
+
+\begin_layout Itemize
+En la pestaña 
+\begin_inset Quotes fld
+\end_inset
+
+Device Setup
+\begin_inset Quotes frd
+\end_inset
+
+, desactivamos la opcion 
+\begin_inset Quotes fld
+\end_inset
+
+Power Down Enable
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+En la pestaña 
+\begin_inset Quotes fld
+\end_inset
+
+Channel Setup
+\begin_inset Quotes frd
+\end_inset
+
+, Activamos el CH0 en modo 
+\begin_inset Quotes fld
+\end_inset
+
+Normal
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Presionamos 
+\begin_inset Quotes fld
+\end_inset
+
+OK
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ahora configuraremos el módulo FlexCAN, seleccionando la opción FlexCAN.
+ En la ventana de FlexCAN seleccionaremos las siguientes opciones: 
+\end_layout
+
+\begin_layout Itemize
+Module: Enable 
+\end_layout
+
+\begin_layout Itemize
+Freeze Enable: Disable 
+\end_layout
+
+\begin_layout Itemize
+Halt FlexCAN: Disable 
+\end_layout
+
+\begin_layout Itemize
+Clock Source: System 
+\end_layout
+
+\begin_layout Itemize
+CAN Speed (Kbits/s): 500 
+\end_layout
+
+\begin_layout Itemize
+Presionamos “OK”
+\end_layout
+
+\begin_layout Standard
+Por ultimo realizaremos la configuración de EMIOS.
+ En esta ventana seleccionaremos las siguientes opciones (Ilustración 21):
+\end_layout
+
+\begin_layout Itemize
+Pestaña “Module Configuration” 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seleccionar Global Time base Enable
+\end_layout
+
+\begin_layout Itemize
+Seleccionar Enable Global Prescaler 
+\end_layout
+
+\begin_layout Itemize
+Seleccionar “OK”
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Con esto concluimos la configuración de periféricos y podemos pasar a generar
+ el código.
+ Presionamos “Exit Wizard”.
+ En la siguiente ventana seleccionamos el menú “Configuration” y de ahí
+ la opción “Code Generation”.
+ Nos aseguramos que las opciones seleccionadas sean las mismas que se ven
+ en la ilustración, y en el apartado de “Source Path” seleccionamos donde
+ se generara el código.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado15.png
+	lyxscale 10
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Opciones de generación del código
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Ahora en el menú “View” seleccionamos “View Section Map”.
+ Ahí cambiaremos la opción “Select Target” de “RAM” a “FLASH” y seleccionamos
+ “OK”.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Ahora estamos listos para generar el código.
+ En el menú “Code/Report Generation” seleccionamos la opción “Generate Source
+ Code”.
+ Se nos pedirá guardar el proyecto sobre el que hemos estado trabajando;
+ Se recomienda guardarlo en un lugar fácil de recordar ya que el archivo
+ se volverá a utilizar en los siguientes apartados del documento.
+ Después de guardar el archivo el código se habrá generado y habremos terminado
+ de utilizar RAppID por el momento.
+\end_layout
+
+\begin_layout Subsection
+Software Freescale CodeWarrior 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Al iniciar el software CodeWarrior seleccionamos el menú “File
+\backslash
+New
+\backslash
+Bareboard Project”.
+ A continuación, se creara una ventana nueva, donde en primera instancia
+ seleccionaremos el nombre del proyecto.Al presionar “Next”, en la siguiente
+ ventana escribiremos en el cuadro de texto que pone “type filter text”
+ el código “MPC5606B” para seleccionar el microcontrolador a usar en el
+ proyecto, después seleccionamos “Next” y en la siguiente ventana “Finish”.
+ Una vez creado el proyecto procedemos a cambiar la compilación del proyecto
+ de RAM a Flash.
+ Ahora cerramos el proyecto en CodeWarrior pero sin cerrar el programa,
+ y regresamos a RAppID.
+\end_layout
+
+\begin_layout Standard
+\noindent
+En RAppID, en el menú “External Tools” Seleccionamos la opción “CWPjmaker”,
+ donde se abrirá la siguiente ventana:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado16.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CodeWarrior Project Maker
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Seleccionaremos entonces la carpeta del código que generamos en la sección
+ anterior con RAppID, en el siguiente cuadro, la carpeta del proyecto de
+ CodeWarrior, y para el tercer cuadro de texto, seleccionaremos el archivo
+ “default560B.lcf” que se encuentra en la carpeta del código auto generado.
+ A demás de esto copiaremos en la carpeta del proyecto de CodeWarrior, en
+ la subcarpeta “Sources” todo el contenido de la carpeta “C:
+\backslash
+Freescale
+\backslash
+FastStartKit
+\backslash
+DriverCode
+\backslash
+TRK5606B”, quitando también desde el explorador de Windows la propiedad
+ de Solo Lectura de todos los archivos incluidos en la carpeta.
+ Al reabrir el proyecto en CodeWarrior podemos ver que los archivos se han
+ incluido en el proyecto.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Ahora desde CodeWarrior seleccionaremos la opción “Build Settings”, que
+ abrirá la ventana que se muestra a continuación.
+ Ubicaremos dentro del apartado “C/C++ General” el sub-apartado “Paths and
+ Symbols” y agregaremos la entrada “${ProjDirPath}/Sources/” (Sin comillas)
+ en la opción “Assembly Source File” .
+ Al terminar este paso estaremos listos para pasar al código del programa.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Codigo del programa
+\end_layout
+
+\begin_layout Standard
+\noindent
+Se ha de desarrollar una aplicación que corresponda al siguiente diagrama
+ de flujo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Diagrama de flujo.jpg
+	lyxscale 10
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de flujo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+El código para el archivo “main.c” será el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,basicstyle={\normalsize},breaklines=true,tabsize=4,commentstyle={\color{red}},keywordstyle={\color{blue}}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*      Control de VFD Parker AC690+ mediante paquetes CAN     */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*                Autor: Alfredo Valdés Cárdenas               */
+\end_layout
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/********************  Archivos de Dependencias **********************/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "rappid_ref.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "rappid_utils.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "sys_init.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "CANapi.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "sbc_hld.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "gpio_drv.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "pot_hld.h" purple
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "Puertos.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*********************  Prototipos de Funciones *********************/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main(void); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void ProcessCANRX(void); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void Delay(int); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void OutPWM(unsigned long, int); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void initEMIOS_0(void); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void initEMIOS_0ch4(void);
+\end_layout
+
+\begin_layout Plain Layout
+
+void initGPIO(int,char); 
+\end_layout
+
+\begin_layout Plain Layout
+
+void IOWrite(int,int); 
+\end_layout
+
+\begin_layout Plain Layout
+
+int IORead(int); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/**********************  Variables Globales *************************/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int velocidad = 0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+char direccion = 'd'; 
+\end_layout
+
+\begin_layout Plain Layout
+
+int i=0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+uint32_t valor =0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/* Mensajes CAN que se transmitiran*/ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+uint8_t msjACK[8] = {1,0,1,0,1,0,1,0}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+uint8_t msjError[8] = {0,0xFF,0,0xFF,0,0xFF,0,0xFF}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+uint8_t msjVel[8] = {5,6,1,0,1,0,1,0}; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*********************  Metodo Principal  ************************/ 
+\end_layout
+
+\begin_layout Plain Layout
+
+void main(void) { 	
+\end_layout
+
+\begin_layout Plain Layout
+
+/*-----------------------------------------------------------*/
+\end_layout
+
+\begin_layout Plain Layout
+
+/*          Funciones de Incializacion del Sistema           */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*-----------------------------------------------------------*/ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	sys_init_fnc();
+\end_layout
+
+\begin_layout Plain Layout
+
+	SBC_Init_DBG();
+\end_layout
+
+\begin_layout Plain Layout
+
+	initEMIOS_0();
+\end_layout
+
+\begin_layout Plain Layout
+
+	initEMIOS_0ch4();
+\end_layout
+
+\begin_layout Plain Layout
+
+	initGPIO(PORTA4,'o');
+\end_layout
+
+\begin_layout Plain Layout
+
+	initGPIO(PORTA5,'o');
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/********* Activar Interrupciones Externas *********/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	EnableExternalInterrupts();
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/* Inicializar filtro CAN */
+\end_layout
+
+\begin_layout Plain Layout
+
+	SetCanRxFilter(0xA, 0, 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+	CanTxMsg (0x0, 1, 8, (uint8_t *)msjACK, 0);
+\end_layout
+
+\begin_layout Plain Layout
+
+	while(1){
+\end_layout
+
+\begin_layout Plain Layout
+
+		ProcessCANRX();
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void ProcessCANRX(void) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	can_msg_struct msgCanRX;
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (CanRxMbFull(0) == 1)/* revisar si se recibieron mensajes CAN*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		msgCanRX = CanRxMsg(0);//Copiar mensaje recibido del buffer a una variable
+\end_layout
+
+\begin_layout Plain Layout
+
+		switch(msgCanRX.data[0]){//Comparar el primer byte.
+ En base al codigo ASCII
+\end_layout
+
+\begin_layout Plain Layout
+
+		//A es arranque, C es cambio de giro, P es paro y V es velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+		case 0x41: //0x41 es A en ASCII, Rutina de comando de Arranque
+\end_layout
+
+\begin_layout Plain Layout
+
+			IOWrite(PORTA4,1); //Encender PA0, activa el relevador de arranque
+\end_layout
+
+\begin_layout Plain Layout
+
+			CanTxMsg (0x54,1,8,(uint8_t *)msjACK,0); //envia ACK desde 0x54, ASCII
+ para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+			Delay(1000); //Una pausa de 1 segundo
+\end_layout
+
+\begin_layout Plain Layout
+
+			break;
+\end_layout
+
+\begin_layout Plain Layout
+
+		case 0x43:
+\end_layout
+
+\begin_layout Plain Layout
+
+			if(direccion=='d'){
+\end_layout
+
+\begin_layout Plain Layout
+
+				IOWrite(PORTA5,1); //Encender PA1, activa el relevador de cambio de
+ giro
+\end_layout
+
+\begin_layout Plain Layout
+
+				CanTxMsg (0x54,1,8,(uint8_t *)msjACK,0); //envia ACK desde 0x54, ASCII
+ para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+				Delay(1000); //Una pausa de 1 segundo
+\end_layout
+
+\begin_layout Plain Layout
+
+				direccion='i';
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			else if(direccion=='i'){
+\end_layout
+
+\begin_layout Plain Layout
+
+				IOWrite(PORTA5,0); //Encender PA1, activa el relevador de cambio de
+ giro
+\end_layout
+
+\begin_layout Plain Layout
+
+				CanTxMsg (0x54,1,8,(uint8_t *)msjACK,0); //envia ACK desde 0x54, ASCII
+ para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+				Delay(1000); //Una pausa de 1 segundo
+\end_layout
+
+\begin_layout Plain Layout
+
+				direccion='d';
+\end_layout
+
+\begin_layout Plain Layout
+
+	 			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			break;
+\end_layout
+
+\begin_layout Plain Layout
+
+		case 0x50: //0x50 es P en ASCII, Rutina de comando de Paro
+\end_layout
+
+\begin_layout Plain Layout
+
+			IOWrite(PORTA4,0); //Encender PA2, activa el relevador de paro
+\end_layout
+
+\begin_layout Plain Layout
+
+			CanTxMsg (0x54,1,8,(uint8_t *)msjACK,0); //envia ACK desde 0x54, ASCII
+ para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+			Delay(1000); //Una pausa de 1 segundo
+\end_layout
+
+\begin_layout Plain Layout
+
+			break;
+\end_layout
+
+\begin_layout Plain Layout
+
+		case 0x56: //0x56 es V en ASCII, Rutina de comando de Velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+			valor=(msgCanRX.data[1]*19999)/100;
+\end_layout
+
+\begin_layout Plain Layout
+
+			OutPWM(valor,4); //Asignamos velocidad a PE7
+\end_layout
+
+\begin_layout Plain Layout
+
+			CanTxMsg (0x54,1,8,(uint8_t *)msjVel,0);//envia ACK desde 0x54, ASCII
+ para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+			Delay(1000);
+\end_layout
+
+\begin_layout Plain Layout
+
+			break;
+\end_layout
+
+\begin_layout Plain Layout
+
+		default :
+\end_layout
+
+\begin_layout Plain Layout
+
+ 			CanTxMsg (0x54,1,8,(uint8_t *)msjError,0);//envia Error desde 0x54,
+ ASCII para T de transmisor
+\end_layout
+
+\begin_layout Plain Layout
+
+			break;
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void Delay(int T){
+\end_layout
+
+\begin_layout Plain Layout
+
+	int i=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	int tiempo = T*10000;
+\end_layout
+
+\begin_layout Plain Layout
+
+	for(i=0;i<tiempo;i++){	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void initEMIOS_0(void) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.MCR.B.GPRE= 1;/* Divide el reloj de 64MHz a 1 MHz*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.MCR.B.GPREN = 1;/* Activar reloj de EMIOS */
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.MCR.B.GTBE = 1;/* Activar timer global*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.MCR.B.FRZ =1;/*Desactiva los canales de EMIOS en modo debug*/ 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void initEMIOS_0ch4(void) {/*EMIOS0 CH4: Output Pulse Width Modulation*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[4].CADR.R = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[4].CBDR.R = 1500;
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[4].CCR.B.BSL = 0x01;/*Usa el contador "B" del canal EMIOS*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[4].CCR.B.EDPOL = 1;/* Modo de flanco positivo*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[4].CCR.B.MODE = 0x60;/* Modo OPWM*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	SIU.PCR[28].R = 0x0600;/* Activa el pin 28 en modo EMIOS*/
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void OutPWM(unsigned long DC, int ch){
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[ch].CADR.R = 19999-DC;/*Estable el inicio del pulso PWM*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	EMIOS_0.CH[ch].CBDR.R = 19999;/*Fin del pulso a 20 ms*/
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void initGPIO(int ch, char mode){
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (mode == 'i'){
+\end_layout
+
+\begin_layout Plain Layout
+
+		SIU.PCR[ch].R = 0x0100;/*Activa el pin "ch" como entrada*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(mode == 'o'){
+\end_layout
+
+\begin_layout Plain Layout
+
+		SIU.PCR[ch].R = 0x0200;/*Activa el pin "ch" como salida*/
+\end_layout
+
+\begin_layout Plain Layout
+
+		IOWrite(ch,0);/*Apaga el pin*/
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+void IOWrite(int ch, int state){
+\end_layout
+
+\begin_layout Plain Layout
+
+	SIU.GPDO[ch].R = !(state); /*Escribe el estado en el pin "ch"*/
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+int IORead(int ch){
+\end_layout
+
+\begin_layout Plain Layout
+
+	return SIU.GPDI[ch].B.PDI; /*Leer el pin, pasa por el dato "ch" */ 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+Crearemos también un archivo con las definiciones de entradas y salidas
+ del microcontrolador llamado 
+\begin_inset Quotes fld
+\end_inset
+
+Puertos.h
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,commentstyle={\color{red}},keywordstyle={\color{blue}}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*               Definicion de pines para MPC5606B             */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*                Autor: Alfredo Valdés Cárdenas               */
+\end_layout
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA0 0
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA1 1
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA2 2
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA3 3
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA4 4
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA5 5
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA6 6
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA7 7
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA8 8
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA9 9
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA10 10
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA11 11
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA12 12
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA13 13
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA14 14
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTA15 15
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB0 16
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB1 17
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB2 18
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB3 19
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB4 20
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB5 21
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB6 22
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB7 23
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB8 24
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB9 25
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB10 26
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB11 27
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB12 28
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB13 29
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB14 30
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTB15 31
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC0 32
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC1 33
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC2 34
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC3 35
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC4 36
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC5 37
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC6 38
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC7 39
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC8 40
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC9 41
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC10 42
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC11 43
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC12 44
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC13 45
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC14 46
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTC15 47
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD0 48
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD1 49
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD2 50
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD3 51
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD4 52
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD5 53
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD6 54
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD7 55
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD8 56
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD9 57
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD10 58
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD11 59
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD12 60
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD13 61
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD14 62
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTD15 63
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE0 64
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE1 65
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE2 66
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE3 67
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE4 68
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE5 69
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE6 70
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE7 71
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE8 72
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE9 73
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE10 74
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE11 75
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE12 76
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE13 77
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE14 78
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTE15 79
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF0 80
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF1 81
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF2 82
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF3 83
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF4 84
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF5 85
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF6 86
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF7 87
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF8 88
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF9 89
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF10 90
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF11 91
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF12 92
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF13 93
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF14 94
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTF15 95
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG0 96
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG1 97
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG2 98
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG3 99
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG4 100
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG5 101
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG6 102
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG7 103
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG8 104
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG9 105
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG10 106
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG11 107
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG12 108
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG13 109
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG14 110
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTG15 111
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH0 112
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH1 113
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH2 114
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH3 115
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH4 116
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH5 117
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH6 118
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH7 119
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH8 120
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH9 121
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH10 122
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PORTH11 123
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+A su vez, el código que se cargara en la tarjeta Arduino es el siguiente:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset listings
+lstparams "language={C++},commentstyle={\color{red}},keywordstyle={\color{blue}}"
+inline false
+status collapsed
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*          Traductor de comandos seriales a paquetes CAN      */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*                Autor: Alfredo Valdés Cárdenas               */
+\end_layout
+
+\begin_layout Plain Layout
+
+/* ----------------------------------------------------------- */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/********************  Archivos de Dependencias **********************/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <mcp_can.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <SPI.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#define INT8U unsigned char
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/**********************  Variables del programa *************************/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+const int SPI_CS_PIN = 9; //Chip Select del SPI en pin 9
+\end_layout
+
+\begin_layout Plain Layout
+
+MCP_CAN CAN(SPI_CS_PIN);  // Indicamos al transceiver cual 
+\end_layout
+
+\begin_layout Plain Layout
+
+                          // es el pin del chip select de SPI
+\end_layout
+
+\begin_layout Plain Layout
+
+INT8U Flag_Recv = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+INT8U len = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+INT8U buf[8];
+\end_layout
+
+\begin_layout Plain Layout
+
+INT32U canId = 0x000;
+\end_layout
+
+\begin_layout Plain Layout
+
+char str[20];
+\end_layout
+
+\begin_layout Plain Layout
+
+String inputString = ""; // String que almacena los datos seriales
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean stringComplete = false; // comprueba que el string este completo
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean comandoArranque = false; // comprueba si el comando es de arranque
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean comandoParo = false; // comprueba si el comando es de paro
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean comandoGiro = false; // comprueba si el comando es de cambio de
+ giro
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean comandoVelocidad = false; // comprueba si el comando es de cambio
+ de velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+boolean direccionGiro = false; // giro a la derecha = true, a la izquierda
+ = false
+\end_layout
+
+\begin_layout Plain Layout
+
+int porcentaje = 0; // porcentaje de velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+unsigned char msjArranque[8] = {0x50, 0, 0, 0, 0, 0, 0, 0};
+\end_layout
+
+\begin_layout Plain Layout
+
+unsigned char msjCDG[8] = {0x43, 0, 0, 0, 0, 0, 0, 0};
+\end_layout
+
+\begin_layout Plain Layout
+
+unsigned char msjParo[8] = {0x41, 0, 0, 0, 0, 0, 0, 0};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/*-----------------------------------------------------------*/
+\end_layout
+
+\begin_layout Plain Layout
+
+/*          Funciones de Incializacion del Sistema           */
+\end_layout
+
+\begin_layout Plain Layout
+
+/*-----------------------------------------------------------*/ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void parserSerial(void);
+\end_layout
+
+\begin_layout Plain Layout
+
+void setup(void);
+\end_layout
+
+\begin_layout Plain Layout
+
+void loop(void);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void setup()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  attachInterrupt(0, MCP2515_ISR, FALLING); // Interrupcion CAN, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                                            // avisa cuando llega un Mensaje
+\end_layout
+
+\begin_layout Plain Layout
+
+  Serial.begin(1200);
+\end_layout
+
+\begin_layout Plain Layout
+
+  Serial.setTimeout(10000);
+\end_layout
+
+\begin_layout Plain Layout
+
+  inputString.reserve(200);
+\end_layout
+
+\begin_layout Plain Layout
+
+  delay(2000);
+\end_layout
+
+\begin_layout Plain Layout
+
+  CAN.begin(CAN_500KBPS);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void MCP2515_ISR()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  Flag_Recv = 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void loop()
+\end_layout
+
+\begin_layout Plain Layout
+
+{ Serial.println("Esperando comando...");
+\end_layout
+
+\begin_layout Plain Layout
+
+  parserSerial();
+\end_layout
+
+\begin_layout Plain Layout
+
+  if (stringComplete) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (comandoArranque == true) {
+\end_layout
+
+\begin_layout Plain Layout
+
+      CAN.sendMsgBuf(0xA, 0, 8, msjArranque);
+\end_layout
+
+\begin_layout Plain Layout
+
+      Serial.print("Recibi comando de arranque");
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoArranque = false;
+\end_layout
+
+\begin_layout Plain Layout
+
+      delay(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (comandoParo == true) {
+\end_layout
+
+\begin_layout Plain Layout
+
+      CAN.sendMsgBuf(0xA, 0, 8, msjParo);
+\end_layout
+
+\begin_layout Plain Layout
+
+      Serial.print("Recibi comando de paro");
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoParo = false;
+\end_layout
+
+\begin_layout Plain Layout
+
+      delay(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (comandoGiro == true) {
+\end_layout
+
+\begin_layout Plain Layout
+
+      CAN.sendMsgBuf(0xA, 0, 8, msjCDG);
+\end_layout
+
+\begin_layout Plain Layout
+
+      Serial.print("Recibi comando de cambio de giro");
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoGiro = false;
+\end_layout
+
+\begin_layout Plain Layout
+
+      delay(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (comandoVelocidad == true)
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+      porcentaje = inputString.toInt();
+\end_layout
+
+\begin_layout Plain Layout
+
+        unsigned char msjVelocidad[8] = {0x56, porcentaje, 0, 0, 0, 0, 0,
+ 0};
+\end_layout
+
+\begin_layout Plain Layout
+
+        CAN.sendMsgBuf(0xA, 0, 8, msjVelocidad);
+\end_layout
+
+\begin_layout Plain Layout
+
+        Serial.print("Recibi cambio de velocidad a "+porcentaje+"%");
+\end_layout
+
+\begin_layout Plain Layout
+
+        delay(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+        comandoVelocidad = false;
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+      inputString = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+      stringComplete = false;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void parserSerial() {
+\end_layout
+
+\begin_layout Plain Layout
+
+  while (Serial.available()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    char inChar = (char)Serial.read(); //Recibe el nuevo byte
+\end_layout
+
+\begin_layout Plain Layout
+
+    inputString += inChar; // agregalo al inputString
+\end_layout
+
+\begin_layout Plain Layout
+
+    // dependiendo del caracter recibido, activa una bandera que indique
+ si es
+\end_layout
+
+\begin_layout Plain Layout
+
+    // un comando de velocidad, cambio de giro, arranque, paro, o fin de
+ linea
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (inChar == '
+\backslash
+n') {
+\end_layout
+
+\begin_layout Plain Layout
+
+      stringComplete = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (inChar == 'A') {
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoArranque = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+      inputString = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (inChar == 'P') {
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoParo = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+      inputString ="";
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (inChar == 'C') {
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoGiro = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+      inputString = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    else if (inChar == 'V') {
+\end_layout
+
+\begin_layout Plain Layout
+
+      comandoVelocidad = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+      inputString ="";
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Placa de control
+\end_layout
+
+\begin_layout Subsubsection
+Parker AC 690+
+\end_layout
+
+\begin_layout Standard
+El Parker AC 690+ es un VFD (Variable Frequency Drive), un dispositivo que
+ nos permite controlar la velocidad de un motor trifasico de corriente alterna.
+ El VFD cuenta con un panel de IO que nos permite controlar el motor de
+ manera remota, sus conexiones se ilustran a continuación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pegado17.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Panel de control del AC 690+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "parkermanual"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Diseño de la placa de control
+\end_layout
+
+\begin_layout Standard
+\noindent
+Habremos de diseñar una placa que tome las señales del microcontrolador
+ y las convierta a otras que puedan ser interpretadas por el drive.
+ Sera necesario convertir la señal PWM de PORTB_12 a una rampa de voltaje,
+ para ello se utilizara un filtro RC.
+ El calculo apropiado para la resistencia del filtro con frecuencia de corte
+ de 500 hertz, habiendo escogido un capacitor de 1 microfaradio, se lleva
+ acabo con la siguiente ecuación:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\[
+R_{f}=\frac{1}{f_{c}*C_{f}*2*\text{\pi}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{f}$
+\end_inset
+
+ es la resistencia del filtro.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f_{c}$
+\end_inset
+
+es la frecuencia de corte, 500 Hz.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C_{f}$
+\end_inset
+
+ es el capacitor del filtro, de 1
+\begin_inset Formula $\mu F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sustituyendo en la ecuación obtenemos que el valor de la resistencia es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{f}=\frac{1}{500*.000001*2*\pi}=318.3099
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El cual aproximaremos al valor comercial de 330
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+También convertiremos las dos señales digitales(PORTA_5 para arranque y
+ paro y PORTA_4 para el cambio de giro) de 5 volts a 24 volts utilizando
+ relevadores.
+ El diagrama esquemático del circuito es el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Circuitos/Tarjeta de Control v2.0 - Esquematico.pdf
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama esquemático de la tarjeta de control
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Se produjo un diseño de PCB para el diagrama utilizando el software Ultiboard
+ de National Instruments.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Circuitos/pegado18.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Circuitos/pegado19.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) Circuito de control, vista superior.
+ b) Circuito de control, vista inferior.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\noindent
+Diseño de la aplicación en LABVIEW
+\end_layout
+
+\begin_layout Standard
+Para la aplicación de control y monitoreo se opto por utilizar el software
+ LABVIEW de National Instruments.
+ Este software es, en pocas palabras, una suite de instrumentación virtual.
+ El proceso de comunicación es el siguiente:
+\end_layout
+
+\begin_layout Itemize
+Abrir el puerto serial para comunicar con la tarjeta Arduino
+\end_layout
+
+\begin_layout Itemize
+Si se desea enviar un comando de arranque, el programa enviara el carácter
+ 'A' mediante el puerto serial.
+\end_layout
+
+\begin_layout Itemize
+Si se desea enviar un comando de paro, el programa enviara el carácter 'P'
+ mediante el puerto serial.
+\end_layout
+
+\begin_layout Itemize
+Si se desea enviar un comando de cambio de giro, el programa enviara el
+ carácter 'C' mediante el puerto serial.
+\end_layout
+
+\begin_layout Itemize
+Si se desea enviar un comando de cambio de velocidad, el programa concatenara
+ el carácter 'V' junto con el valor de un slider llamado 'Velocidad' en
+ el panel de instrumentación, y enviara esta cadena mediante el puerto serial.
+\end_layout
+
+\begin_layout Standard
+A continuación se detalla el diagrama de programación de la aplicación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ControlVFDp.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Panel de instrumentación de la aplicación en LABVIEW
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ControlVFDd.png
+	scale 40
+	scaleBeforeRotation
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bloque principal de código de la aplicación en LABVIEW
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ControlVFDd1.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condicional de envió de comando, al interior se puede observar el caso de
+ comando 'Velocidad'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ControlVFDd2.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condicional de comando de 'Arranque'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ControlVFDd3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condicional de comando de 'Paro'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ControlVFDd4.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condicional de comando de cambio de giro'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Utilizando la herramienta 'Application builder' de LABVIEW podemos exportar
+ este programa a un archivo ejecutable, el cual puede correr desde cualquier
+ computadora con sistema operativo Windows.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+\noindent
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+\noindent
+En definitiva, la realización de este proyecto presento grandes retos, sobre
+ todo en el área de microcontroladores.
+ La diferencia entre las plataformas de aprendizaje y las de desarrollo
+ profesional es muy grande; aun así, después de meses de estudio, se logro
+ superar esa barrera entre los pequeños proyectos y las aplicaciones para
+ producción.
+ Es necesario notar que el protocolo CAN como tal es un poco difícil de
+ implementar en un sistema 
+\emph on
+barebones 
+\emph default
+como lo es este, y requerirá algo de ingenio por parte del desarrollador
+ para poder ser implementado de manera solida.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Es posible que adoptar algún protocolo como CANOpen o DeviceNet hubiera
+ sido una mejor alternativa en consideración a la aplicación final, aunque
+ estos no permitirían familiarizarse tanto con el funcionamiento en la capa
+ física y de control de enlace como el protocolo CAN.
+ Con el conocimiento adquirido durante la realización de este trabajo se
+ pueden implementar proyectos tanto de instrumentación automotriz como de
+ automatización industrial.
+ Es necesario reconocer la flexibilidad que brinda un protocolo tan bien
+ documentado y cimentado, que tentativamente, podríamos decir que es el
+ de mayor difusión a nivel mundial hoy en día.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Bibliografia"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
